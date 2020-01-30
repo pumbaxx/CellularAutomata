@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+     <children>
+
+         <TextField layoutX="808.0" layoutY="45.0" prefHeight="31.0" prefWidth="100.0" promptText="width" fx:id="x" />
+         <TextField fx:id="y" layoutX="916.0" layoutY="45.0" prefHeight="31.0" prefWidth="100.0" promptText="height" />
+         <TextField fx:id="seedinuput" layoutX="808.0" layoutY="87.0" prefHeight="31.0" prefWidth="162.0" promptText="number of nucleons" />
+         <Button layoutX="1021.0" layoutY="48.0" mnemonicParsing="false" onAction="#size" text="Space" />
+         <Button layoutX="1000.0" layoutY="90.0" mnemonicParsing="false" onAction="#seed" prefHeight="25.0" prefWidth="73.0" text="Generate" />
+
+         <Button layoutX="808.0" layoutY="207.0" mnemonicParsing="false" onAction="#grain" text="GrainGrow" />
+         <Button layoutX="925.0" layoutY="129.0" mnemonicParsing="false" onAction="#grain3" text="Next Step" />
+
+
+         <Button layoutX="813.0" layoutY="314.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="91.0" text="SaveImage" />
+         <Button layoutX="914.0" layoutY="314.0" mnemonicParsing="false" onAction="#loadimage" prefHeight="31.0" prefWidth="91.0" text="LoadImage" />
+
+         <Button layoutX="879.0" layoutY="275.0" mnemonicParsing="false" onAction="#loadtxt" text="LoadTxt" />
+         <Button layoutX="807.0" layoutY="275.0" mnemonicParsing="false" onAction="#saveString" text="SaveTxt" />
+
+         <TextField fx:id="rd" layoutX="972.0" layoutY="240.0" promptText="size of inclusions" />
+         <TextField fx:id="number" layoutX="807.0" layoutY="240.0" promptText="number of inclusions" />
+         <Button layoutX="1129.0" layoutY="240.0" mnemonicParsing="false" onAction="#circle" text="Insert" />
+         
+         <Button layoutX="922.0" layoutY="207.0" mnemonicParsing="false" onAction="#grain2" text="GrainGrow2" />
+
+         <TextField fx:id="percent" layoutX="920.0" layoutY="170.0" prefHeight="25.0" prefWidth="100.0" promptText="\% to normal grain" />
+
+         <TextField fx:id="iteration" layoutX="808.0" layoutY="129.0" prefHeight="25.0" prefWidth="100.0" promptText="iteration" />
+
+         <Button layoutX="957.0" layoutY="363.0" mnemonicParsing="false" onAction="#border" text="Border" />
+         <Button layoutX="1026.0" layoutY="363.0" mnemonicParsing="false" onAction="#selectedB" text="SelectedB" />
+         <TextField fx:id="boardSize" layoutX="807.0" layoutY="363.0" promptText="border size" />
+         <Button layoutX="807.0" layoutY="399.0" mnemonicParsing="false" onAction="#clear" text="Reset" />
+         <Button layoutX="864.0" layoutY="399.0" mnemonicParsing="false" onAction="#clearAll" text="ClearAll" />
+         <TextField fx:id="jgb" layoutX="813.0" layoutY="170.0" prefHeight="25.0" prefWidth="91.0" promptText="jgb" />
+
+
+
+         <Button layoutX="809.0" layoutY="440.0" mnemonicParsing="false" onAction="#dualPhase" text="DualPhase" />
+         <Button layoutX="895.0" layoutY="440.0" mnemonicParsing="false" onAction="#substructure" text="Substructure" />
+
+         <BorderPane layoutX="14.0" layoutY="14.0" style="-fx-border-color: BLACK;">
+
+         <center>
+            <Canvas fx:id="pane" height="500.0" onMouseClicked="#convasClick" width="500.0">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></Canvas>
+         </center>
+      </BorderPane>
+
+
+
+
+
+
+
+
+
+
+
+
+   </children>
+</AnchorPane>
